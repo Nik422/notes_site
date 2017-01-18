@@ -1,0 +1,32 @@
+table{
+    font-family: "Comic Sans MS";
+    margin-top: 40vh;
+    border-style: solid;
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: #181818 10px 10px 25px;
+    background-color: darkgrey;
+    border-color: darkgrey;
+}
+.button_one:hover{
+    box-shadow: midnightblue 0 0 10px;
+    transition: all 0.5s;
+}
+.button_two:hover{
+    box-shadow: midnightblue 0 0 10px;
+    transition: all 0.5s;
+}
+
+span{
+    padding: 4px 4px 4px 4px;
+    border-style: solid;
+    border-color: dodgerblue;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    background: url("images/Фон.jpg");
+    background-size: 100%;
+}
+.menu{
+    cursor: default;
+    position: absolute;
+    height: 100%;
+    width: 20vh;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+    inset 0 10px 200px white, /* Sides Light Shadow */
+    inset 0 -100vh rgba(0,0,0,0.3); /* Dark Background */
+}
+#notes_name{
+    margin-left: 20vh;
+    position: absolute;
+    height: 100%;
+    width: 70vh;
+    overflow: auto;
+}
+#logo{
+    font-size: 50px;
+}
+.icons img{
+    height: 60%;
+    width: 60%;
+    border-radius: 100%;
+}
+.icons{
+    margin-top: 30vh;
+}
+.icons img:hover{
+    background-color: #a79fe5;
+}
+#text{
+    font-size: 50px;
+    font-family: Arial;
+    color: white;
+}
+#delete{
+    cursor: pointer;
+}
+#new{
+    cursor: pointer;
+}
+
+/* меню добавления заметок */
+
+.add_note{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    height: 100%;
+    width: 80vh;
+    position: absolute;
+    margin-left: 100vh;
+}
+form{
+    height: 100%;
+}
+#note_name{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: inset 0 0 50px white;
+    color: white;
+    font-size: 30px;
+    color: white;
+}
+textarea{
+    font-size: 20px;
+    margin-top: 10px;
+    width: 100%;
+    height: 70%;
+    max-height: 70%;
+    max-width: 100%;
+    background-color: transparent;
+    overflow: auto;
+    color: white;
+    box-shadow: inset 0 0 200px white;
+    border: none;
+    border-radius: 10px;
+}
+textarea::-webkit-input-placeholder{
+    color: white;
+}
+input::-webkit-input-placeholder{
+    color: white;
+}
+
+#close{
+    position: absolute;
+    margin-left: 5%;
+    transition: all 0.5s;
+}
+#close:hover{
+    transform: translate(-10px);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#send{
+    position: absolute;
+    margin-left: -20%;
+    transition: all 0.5s;
+}
+#send:hover{
+    transform: translate(-10px);
+    transition: all 0.5s;
+}
+
+
+
+/* стили для зоны имён заметок */
+
+.note_name_button{
+    position: absolute;
+    left: 30%;
+    overflow: auto;
+    word-wrap: break-word;
+}
+.note_name_button:hover{
+    box-shadow: 0 0 10px black;
+}
+.note_name_area{
+    padding-top: 5%;
+}
+
+/* зона показа заметок */
+
+.show_note{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    height: 100%;
+    width: 80vh;
+    position: absolute;
+    margin-left: 100vh;
+}
+#note_name_show{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: inset 0 0 50px white;
+    color: white;
+    font-size: 30px;
+}
+
+/* Прелоадер */
+
+#p_prldr{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    background: #9A12B3;
+    z-index: 30;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.contpre small{font-size:25px;}
+
+
+.contpre{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    margin-left:-125px;
+    margin-top:-75px;
+    color:#fff;
+    font-size:40px;
+    letter-spacing:-2px;
+    text-align:center;
+    line-height:35px;}
+
+
+#p_prldr .svg_anm {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    background: url(images/preloader.gif) center center no-repeat;
+    background-size:41px;
+    margin: -16px 0 0 -16px;}
